@@ -37,7 +37,7 @@ st.subheader("Data Input")
 st.write(input_df)
 
 # Preprocessing sesuai dengan pelatihan model
-df = pd.read_csv("healthcare-dataset-stroke-data.csv")
+df = pd.read_csv("data/healthcare-dataset-stroke-data.csv")
 df = df.dropna()
 df = pd.get_dummies(df, drop_first=True)
 input_df = pd.get_dummies(input_df)
