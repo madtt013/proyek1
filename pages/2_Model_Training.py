@@ -9,7 +9,7 @@ st.title("Pelatihan Model")
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("healthcare-dataset-stroke-data.csv")
+    return pd.read_csv("data/healthcare-dataset-stroke-data.csv")
 
 df = load_data()
 df = df.dropna()
