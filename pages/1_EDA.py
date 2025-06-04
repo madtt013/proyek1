@@ -21,7 +21,3 @@ fig, ax = plt.subplots()
 sns.countplot(x='stroke', data=df, ax=ax)
 st.pyplot(fig)
 
-st.write("### Korelasi Fitur")
-fig, ax = plt.subplots(figsize=(10,8))
-sns.heatmap(df.corr(), annot=True, fmt=".2f", cmap="coolwarm", ax=ax)
-st.pyplot(fig)
